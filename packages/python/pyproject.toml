@@ -14,8 +14,8 @@ dependencies = []
 
 [project.urls]
 Homepage = "https://alonzio.com"
-Repository = "https://github.com/auctor-stack/alonzio-sdk"
-Issues = "https://github.com/auctor-stack/alonzio-sdk/issues"
+Repository = "https://github.com/alonzio-labs/alonzio-sdk"
+Issues = "https://github.com/alonzio-labs/alonzio-sdk/issues"
 
 [project.scripts]
 alonzio = "alonzio.__main__:main"

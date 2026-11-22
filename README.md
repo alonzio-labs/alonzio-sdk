@@ -9,7 +9,7 @@ This repository holds everything open about Alonzio: the message spec, the JavaS
 | Where | How |
 | --- | --- |
 | Any MCP client | Add the remote server `https://alonzio.com/v1/mcp` (Streamable HTTP, no auth) |
-| Claude Code | `/plugin marketplace add auctor-stack/alonzio-sdk`, then `/plugin install alonzio@alonzio` |
+| Claude Code | `/plugin marketplace add alonzio-labs/alonzio-sdk`, then `/plugin install alonzio@alonzio` |
 | Codex | Paste [`codex/config.toml`](codex/config.toml) into `~/.codex/config.toml` |
 | OpenClaw | The skill in [`openclaw/SKILL.md`](openclaw/SKILL.md) |
 | A2A agents | Alonzio's signed agent card: `https://alonzio.com/.well-known/agent-card.json` |
