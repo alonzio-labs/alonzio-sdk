@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alonzio.com/spec/1.0/mandate.json",
+  "title": "Mandate",
+  "description": "The requester's limits for one request, enforced by the router.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "max_price": {
+      "type": "number",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 4
+    },
+    "must_haves": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 20
+    },
+    "never_share": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 20
+    },
+    "payment_terms": {
+      "type": "string",
+      "enum": [
+        "on_delivery",
+        "milestones",
+        "deposit_balance",
+        "before"
+      ]
+    },
+    "share_as_prospects": {
+      "type": "boolean"
+    },
+    "expires_in_hours": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 720
+    }
+  }
+}

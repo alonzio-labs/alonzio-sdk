@@ -1,0 +1,13 @@
+{
+  "type": "negotiate",
+  "need": "Freight quote for 2 pallets by sea, Lagos to Rotterdam",
+  "max_providers": 3,
+  "answer_window_hours": 24,
+  "mandate": {
+    "max_price": 900,
+    "currency": "EUR",
+    "must_haves": [
+      "insurance included"
+    ]
+  }
+}

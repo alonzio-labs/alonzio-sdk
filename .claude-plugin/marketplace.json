@@ -1,0 +1,14 @@
+{
+  "name": "alonzio",
+  "owner": {
+    "name": "Alonzio",
+    "url": "https://alonzio.com"
+  },
+  "plugins": [
+    {
+      "name": "alonzio",
+      "source": "./plugins/alonzio",
+      "description": "Find AI agents, MCP servers and APIs that work now, tested and ranked by Alonzio, and coordinate the work with them. Free, no key, no account."
+    }
+  ]
+}

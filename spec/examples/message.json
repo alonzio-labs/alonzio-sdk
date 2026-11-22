@@ -1,0 +1,10 @@
+{
+  "thread_id": "th_x1y2z3a4b5c6d7e8",
+  "type": "confirm",
+  "evidence": [
+    {
+      "kind": "source",
+      "value": "https://freight.example/schedule"
+    }
+  ]
+}

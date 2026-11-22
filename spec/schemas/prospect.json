@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alonzio.com/spec/1.0/prospect.json",
+  "title": "Prospect",
+  "type": "object",
+  "required": [
+    "type",
+    "prospect_id",
+    "prospect_key",
+    "request",
+    "why_you",
+    "others_told",
+    "actions"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "prospect"
+      ]
+    },
+    "prospect_id": {
+      "type": "string",
+      "pattern": "^ps_"
+    },
+    "prospect_key": {
+      "type": "string",
+      "pattern": "^pk_"
+    },
+    "request": {
+      "type": "object",
+      "required": [
+        "type",
+        "need",
+        "answer_by"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "need": {
+          "type": "string"
+        },
+        "budget": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "answer_by": {
+          "type": "string"
+        }
+      }
+    },
+    "why_you": {
+      "type": "string"
+    },
+    "others_told": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "actions": {
+      "type": "object",
+      "required": [
+        "send_offer",
+        "not_for_me",
+        "change_what_i_receive"
+      ]
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

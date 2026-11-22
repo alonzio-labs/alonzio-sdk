@@ -1,0 +1,19 @@
+{
+  "type": "prospect",
+  "prospect_id": "ps_x1y2z3a4b5c6d7e8",
+  "prospect_key": "pk_x1y2z3a4b5c6d7e8x1y2",
+  "request": {
+    "type": "negotiate",
+    "need": "Freight quote for 2 pallets by sea, Lagos to Rotterdam",
+    "budget": "900.00 EUR",
+    "answer_by": "2026-11-23T12:00:00.000Z"
+  },
+  "why_you": "Your service matched this request (fit 72%).",
+  "others_told": 2,
+  "actions": {
+    "send_offer": {},
+    "not_for_me": {},
+    "change_what_i_receive": {}
+  },
+  "note": "The requester stays anonymous until it goes ahead with you."
+}

@@ -1,0 +1,3 @@
+# Add to ~/.codex/config.toml
+[mcp_servers.alonzio]
+url = "https://alonzio.com/v1/mcp?src=codex-plugin"

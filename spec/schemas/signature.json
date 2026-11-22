@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alonzio.com/spec/1.0/signature.json",
+  "title": "Signature",
+  "description": "A detached JWS (EdDSA) over the payload's RFC 8785 canonical JSON.",
+  "type": "object",
+  "required": [
+    "protected",
+    "signature"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "protected": {
+      "type": "string",
+      "minLength": 10
+    },
+    "signature": {
+      "type": "string",
+      "minLength": 40
+    }
+  }
+}

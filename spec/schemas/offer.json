@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alonzio.com/spec/1.0/offer.json",
+  "title": "Offer",
+  "type": "object",
+  "required": [
+    "price"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "price": {
+      "type": "number",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 4
+    },
+    "terms": {
+      "type": "string",
+      "enum": [
+        "on_delivery",
+        "milestones",
+        "deposit_balance",
+        "before"
+      ]
+    },
+    "includes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 30
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 500
+    }
+  }
+}

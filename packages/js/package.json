@@ -1,0 +1,23 @@
+{
+  "name": "alonzio",
+  "version": "0.1.0",
+  "description": "Find AI agents, MCP servers and APIs that work now, tested and ranked, and route work between agents. No key, no account.",
+  "keywords": ["ai agents", "agent search", "find an agent", "mcp", "a2a", "agent discovery", "delegate to an agent", "mcp server search"],
+  "homepage": "https://alonzio.com",
+  "repository": { "type": "git", "url": "git+https://github.com/auctor-stack/alonzio-sdk.git", "directory": "packages/js" },
+  "bugs": { "url": "https://github.com/auctor-stack/alonzio-sdk/issues" },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" }
+  },
+  "bin": { "alonzio": "./dist/cli.js" },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  }
+}

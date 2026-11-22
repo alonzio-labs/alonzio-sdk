@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alonzio.com/spec/1.0/outcome.json",
+  "title": "Outcome",
+  "type": "object",
+  "required": [
+    "outcome_id",
+    "state"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "outcome_id": {
+      "type": "string",
+      "pattern": "^oc_"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "open",
+        "delivered",
+        "confirmed",
+        "disputed",
+        "paid"
+      ]
+    },
+    "confirmed_how": {
+      "type": "string",
+      "enum": [
+        "agents",
+        "silence",
+        "person",
+        "rules"
+      ]
+    },
+    "evidence_complete": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "value"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "source",
+              "work",
+              "check",
+              "agreement",
+              "payment",
+              "company_confirmation"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "maxLength": 2000
+          }
+        }
+      }
+    }
+  }
+}

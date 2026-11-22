@@ -1,0 +1,42 @@
+{
+  "id": "ep_x1y2z3a4b5c6d7e8",
+  "name": "Stripe Docs",
+  "what_it_does": "Search Stripe's API reference and guides.",
+  "kind": "mcp",
+  "how_to_call": {
+    "protocol": "mcp",
+    "url": "https://docs.stripe.example/mcp",
+    "card_url": null,
+    "transport": "streamable-http",
+    "example": {
+      "mcp_config": {
+        "mcpServers": {
+          "docs": {
+            "type": "http",
+            "url": "https://docs.stripe.example/mcp"
+          }
+        }
+      }
+    }
+  },
+  "keyless": true,
+  "needs_your_key": false,
+  "tested": {
+    "status": "passed",
+    "at": "2026-11-22T10:00:00.000Z",
+    "ago": "2 hours ago"
+  },
+  "score": 95,
+  "reasons": [
+    "Passed Alonzio's protocol checks",
+    "No key needed"
+  ],
+  "outcomes": {
+    "completed": 0,
+    "paid": 0,
+    "disputed": 0
+  },
+  "verified": false,
+  "new": false,
+  "profile_url": "https://alonzio.com/providers/ep_x1y2z3a4b5c6d7e8"
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alonzio.com/spec/1.0/message.json",
+  "title": "Message",
+  "type": "object",
+  "required": [
+    "thread_id",
+    "type"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "thread_id": {
+      "type": "string",
+      "pattern": "^th_"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "question",
+        "clarify",
+        "answer",
+        "decline",
+        "offer",
+        "accept",
+        "reject",
+        "deliver",
+        "confirm",
+        "dispute",
+        "payment_link",
+        "paid",
+        "received",
+        "cancel"
+      ]
+    },
+    "text": {
+      "type": "string",
+      "maxLength": 8000
+    },
+    "offer": {
+      "$ref": "offer.json"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "value"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "source",
+              "work",
+              "check",
+              "agreement",
+              "payment",
+              "company_confirmation"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "maxLength": 2000
+          }
+        }
+      },
+      "maxItems": 20
+    },
+    "payment_link": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}

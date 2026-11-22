@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://alonzio.com/spec/1.0/result-card.json",
+  "title": "Result card",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "what_it_does",
+    "kind",
+    "how_to_call",
+    "keyless",
+    "needs_your_key",
+    "tested",
+    "score",
+    "reasons",
+    "outcomes",
+    "verified",
+    "new",
+    "profile_url"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ep_"
+    },
+    "name": {
+      "type": "string"
+    },
+    "what_it_does": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "a2a",
+        "mcp",
+        "ucp",
+        "docs_mcp"
+      ]
+    },
+    "how_to_call": {
+      "type": "object",
+      "required": [
+        "protocol",
+        "url"
+      ],
+      "properties": {
+        "protocol": {
+          "type": "string",
+          "enum": [
+            "mcp",
+            "a2a"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "card_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transport": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "example": {}
+      }
+    },
+    "keyless": {
+      "type": "boolean"
+    },
+    "needs_your_key": {
+      "type": "boolean"
+    },
+    "tested": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "passed",
+            "needs_key"
+          ]
+        },
+        "at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ago": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outcomes": {
+      "type": "object",
+      "required": [
+        "completed",
+        "paid",
+        "disputed"
+      ],
+      "properties": {
+        "completed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "paid": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "disputed": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "new": {
+      "type": "boolean"
+    },
+    "profile_url": {
+      "type": "string",
+      "pattern": "^https?://"
+    }
+  }
+}

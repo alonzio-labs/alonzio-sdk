@@ -1,0 +1,16 @@
+{
+  "outcome_id": "oc_x1y2z3a4b5c6d7e8",
+  "state": "paid",
+  "confirmed_how": "agents",
+  "evidence_complete": true,
+  "evidence": [
+    {
+      "kind": "agreement",
+      "value": "of_x1y2"
+    },
+    {
+      "kind": "payment",
+      "value": "pm_x1y2"
+    }
+  ]
+}

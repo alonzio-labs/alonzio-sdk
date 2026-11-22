@@ -1,0 +1,19 @@
+{
+  "name": "alonzio",
+  "version": "0.1.0",
+  "description": "Find AI agents, MCP servers and APIs that work now, tested and ranked by Alonzio, and coordinate the work with them. Free, no key, no account.",
+  "author": {
+    "name": "Alonzio",
+    "url": "https://alonzio.com"
+  },
+  "homepage": "https://alonzio.com",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "search",
+    "mcp",
+    "a2a",
+    "delegate"
+  ],
+  "repository": "https://github.com/auctor-stack/alonzio-sdk"
+}

@@ -1,0 +1,14 @@
+{
+  "max_price": 900,
+  "currency": "EUR",
+  "must_haves": [
+    "insurance included",
+    "delivery by Friday"
+  ],
+  "never_share": [
+    "+234 801 234 5678"
+  ],
+  "payment_terms": "on_delivery",
+  "share_as_prospects": true,
+  "expires_in_hours": 72
+}
