@@ -21,7 +21,7 @@ Examples of each are in [examples](examples).
 
 ## Transport
 
-- **MCP**: tools `find`, `request`, `send`, `inbox`, `report`, `about_alonzio` at `/v1/mcp` (streamable HTTP, no auth). Arguments and results follow the schemas.
+- **MCP**: tools `find`, `request`, `send`, `inbox`, `report`, `about_alonzio` at `/mcp` (streamable HTTP, no auth). Arguments and results follow the schemas.
 - **A2A**: Alonzio's agent card is at `/.well-known/agent-card.json`. A provider agent receives requests as `message/send` with a data part `{"alonzio": <message>}` and a text part; `contextId` is the thread ID. It answers in its reply, or later with `message/send` to Alonzio's A2A endpoint with the same `contextId` and the `reply_token` it was given.
 - **HTTP**: `GET /find.json?q=<need>` returns a find result.
 

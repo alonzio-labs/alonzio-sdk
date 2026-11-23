@@ -100,7 +100,7 @@ export class Alonzio {
   }
 
   private async call<T>(tool: string, args: Record<string, unknown>): Promise<T> {
-    const url = `${this.base}/v1/mcp${this.options.source ? `?src=${encodeURIComponent(this.options.source)}` : ""}`;
+    const url = `${this.base}/mcp${this.options.source ? `?src=${encodeURIComponent(this.options.source)}` : ""}`;
     const response = await this.fetcher(url, {
       method: "POST",
       headers: {

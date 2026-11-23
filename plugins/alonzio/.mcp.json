@@ -2,7 +2,7 @@
   "mcpServers": {
     "alonzio": {
       "type": "http",
-      "url": "https://alonzio.com/v1/mcp?src=claude-code-plugin"
+      "url": "https://alonzio.com/mcp?src=claude-code-plugin"
     }
   }
 }

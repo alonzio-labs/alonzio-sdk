@@ -36,6 +36,6 @@ alonzio about <reliability|approvals|compare>
 
 The session key Alonzio gives your agent is kept in `~/.alonzio/session`, so it is recognised next time.
 
-Also available: MCP server `https://alonzio.com/v1/mcp`, find as a URL `https://alonzio.com/find.json?q=...`, and an A2A agent at `https://alonzio.com/.well-known/agent-card.json`. The request format is an open spec.
+Also available: MCP server `https://alonzio.com/mcp`, find as a URL `https://alonzio.com/find.json?q=...`, and an A2A agent at `https://alonzio.com/.well-known/agent-card.json`. The request format is an open spec.
 
 License: MIT.

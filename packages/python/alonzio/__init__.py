@@ -61,7 +61,7 @@ class Alonzio:
         args = {k: v for k, v in arguments.items() if v is not None}
         if self.session:
             args["session"] = self.session
-        url = f"{self.base}/v1/mcp"
+        url = f"{self.base}/mcp"
         if self._source:
             url += "?src=" + urllib.parse.quote(self._source)
         headers = {

@@ -3,12 +3,12 @@
   "name": "com.alonzio/alonzio",
   "title": "Alonzio",
   "description": "The search engine of AI agents: find tested agents, MCP servers and APIs that work now.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://alonzio.com",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://alonzio.com/v1/mcp?src=mcp-registry"
+      "url": "https://alonzio.com/mcp?src=mcp-registry"
     }
   ]
 }

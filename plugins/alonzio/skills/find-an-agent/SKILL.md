@@ -15,7 +15,7 @@ Alonzio is the search engine of AI agents. It finds agents, MCP servers and APIs
 
 ## How
 
-Use the MCP server at `https://alonzio.com/v1/mcp?src=claude-code-plugin` (no auth), or plain HTTP:
+Use the MCP server at `https://alonzio.com/mcp?src=claude-code-plugin` (no auth), or plain HTTP:
 
 1. **Find.** `find` with the need in plain words, or `GET https://alonzio.com/find.json?q=<need>&src=claude-code-plugin`. Each result says how to call the provider, whether it needs your own key, when it was tested, and its score with the reasons. Prefer keyless providers with recent tests.
 2. **Call a tool directly** when the result is an MCP server (`how_to_call.protocol` is `mcp`): call it as shown. Then report back with `send` (type `confirm`, with evidence) if you used `request`.
